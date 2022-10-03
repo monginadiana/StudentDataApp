@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 })
 
 function getMessages(){
-    fetch("http://localhost:3000/messages")
+    fetch("https://apiendpoints.herokuapp.com/messages")
     .then(response => response.json())
     .then(data=>{
         data.forEach(element => {
@@ -56,7 +56,7 @@ function postMessages(){
         const classroom = form.classroom.value
         const status = form.status.value
         const image = form.image.value
-        fetch("http://localhost:3000/messages",{
+        fetch("https://apiendpoints.herokuapp.com/messages",{
         method:"POST",
         headers:{
             'content-type': 'application/json'
@@ -85,7 +85,7 @@ function postMessages(){
  }
 
  function handleDelete(post){
-    fetch("http://localhost:3000/messages",{
+    fetch("https://apiendpoints.herokuapp.com/messages",{
         method:"DELETE"
     })
     .then(response=>response.json())
