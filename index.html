@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatRoom</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+    rel="stylesheet"
+    />
+
+</head>
+  
+
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img
+        src="https://i.pinimg.com/originals/60/d4/d3/60d4d31e4f2b18abaee11da6281ff6ea.png"
+        class="me-2"
+        height="50"
+        alt="MDB Logo"
+        loading="lazy"
+        />
+        <small>StudentDatabase</small>
+    </a>
+    </div>
+</nav>
+
+<center>
+  <div id="logs" class="form">
+    <form id="form" class="forms my-4 p-3">
+      <h3>Create Student Data </h3>
+      <div>
+        <input type="text" name="name" placeholder="Name" required/>
+        <input type="email" name="email" placeholder="Email" required=""/>
+      </div>
+      <div>
+        <input type="text" name="classroom" placeholder="Classroom" required/>
+        <input type="url" name="image" placeholder="Image-Url" required/>
+      </div>
+      <div>
+        <select name="status" >
+          <option selected disabled>Status</option>
+          <option value="active">Active</option>
+          <option value="inactive">Inactive</option>
+        </select>
+        <br>
+        <button class=" mt-2 btn btn-outline-success btn-rounded" type="submit">Submit</button>
+      </div>
+     
+     
+     
+     
+    </form>
+  </div>
+  <button id="toogle">Show Form</button>
+
+  
+</center>
+<table class="table align-middle mb-0 bg-white">
+  <thead class="bg-light">
+    <tr>
+      <th>Name</th>
+      <th>Classroom</th>
+      <th>Status</th>
+      
+    </tr>
+  </thead>
+  <tbody id="dms">
+
+  </tbody>
+</table>
+<script>
+
+  
+  
+
+</script>
+    
+
+        
+    <!-- MDB -->
+    <script src="index.js"></script>
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    
+</body>
+</html>
